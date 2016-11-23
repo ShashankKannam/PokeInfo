@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9827FEB01DE549BC00AA8257 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9827FEAF1DE549BC00AA8257 /* pokemon.csv */; };
 		98C17B541DE25B5900558ECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C17B531DE25B5900558ECB /* AppDelegate.swift */; };
 		98C17B561DE25B5900558ECB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C17B551DE25B5900558ECB /* ViewController.swift */; };
 		98C17B591DE25B5900558ECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C17B571DE25B5900558ECB /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9827FEAF1DE549BC00AA8257 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		98C17B501DE25B5900558ECB /* PokeInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C17B531DE25B5900558ECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98C17B551DE25B5900558ECB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				98C17B571DE25B5900558ECB /* Main.storyboard */,
 				98C17B5A1DE25B5900558ECB /* Assets.xcassets */,
 				98C17B5C1DE25B5900558ECB /* LaunchScreen.storyboard */,
+				9827FEAF1DE549BC00AA8257 /* pokemon.csv */,
 				98C17B5F1DE25B5900558ECB /* Info.plist */,
 			);
 			path = PokeInfo;
@@ -237,6 +240,7 @@
 			files = (
 				98C17B5E1DE25B5900558ECB /* LaunchScreen.storyboard in Resources */,
 				98C17B5B1DE25B5900558ECB /* Assets.xcassets in Resources */,
+				9827FEB01DE549BC00AA8257 /* pokemon.csv in Resources */,
 				98C17B591DE25B5900558ECB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +518,7 @@
 				98C17B7A1DE25B5900558ECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98C17B7B1DE25B5900558ECB /* Build configuration list for PBXNativeTarget "PokeInfoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				98C17B7D1DE25B5900558ECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98C17B7E1DE25B5900558ECB /* Build configuration list for PBXNativeTarget "PokeInfoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				98C17B801DE25B5900558ECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
