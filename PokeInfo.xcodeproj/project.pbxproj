@@ -18,6 +18,8 @@
 		98C17B691DE25B5900558ECB /* PokeInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C17B681DE25B5900558ECB /* PokeInfoTests.swift */; };
 		98C17B741DE25B5900558ECB /* PokeInfoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C17B731DE25B5900558ECB /* PokeInfoUITests.swift */; };
 		98FC26EA1DE6E2010096403B /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FC26E91DE6E2010096403B /* csv.swift */; };
+		98FC26EC1DE6F4F50096403B /* PokemonSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98FC26EB1DE6F4F50096403B /* PokemonSolid.ttf */; };
+		98FC26EE1DE6FBF30096403B /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98FC26ED1DE6FBF30096403B /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		98C17B731DE25B5900558ECB /* PokeInfoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeInfoUITests.swift; sourceTree = "<group>"; };
 		98C17B751DE25B5900558ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98FC26E91DE6E2010096403B /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		98FC26EB1DE6F4F50096403B /* PokemonSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonSolid.ttf; sourceTree = "<group>"; };
+		98FC26ED1DE6FBF30096403B /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 				98C17B5A1DE25B5900558ECB /* Assets.xcassets */,
 				98C17B5C1DE25B5900558ECB /* LaunchScreen.storyboard */,
 				9827FEAF1DE549BC00AA8257 /* pokemon.csv */,
+				98FC26EB1DE6F4F50096403B /* PokemonSolid.ttf */,
+				98FC26ED1DE6FBF30096403B /* music.mp3 */,
 				98FC26E91DE6E2010096403B /* csv.swift */,
 				98C17B5F1DE25B5900558ECB /* Info.plist */,
 			);
@@ -268,7 +274,9 @@
 			files = (
 				98C17B5E1DE25B5900558ECB /* LaunchScreen.storyboard in Resources */,
 				98C17B5B1DE25B5900558ECB /* Assets.xcassets in Resources */,
+				98FC26EE1DE6FBF30096403B /* music.mp3 in Resources */,
 				9827FEB01DE549BC00AA8257 /* pokemon.csv in Resources */,
+				98FC26EC1DE6F4F50096403B /* PokemonSolid.ttf in Resources */,
 				98C17B591DE25B5900558ECB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
