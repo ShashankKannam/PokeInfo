@@ -18,6 +18,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var musicPlayer:AVAudioPlayer!
     var inSearchMode:Bool = false
     var filteredPokemon = [Pokemon]()
+    var pokemon:Pokemon!
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,7 +110,22 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        if inSearchMode{
+             pokemon = filteredPokemon[indexPath.row]
+        }else{
+             pokemon = pokemons[indexPath.row]
+        }
+        performSegue(withIdentifier: "pokemonInfo", sender: pokemon)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "pokemonInfo"{
+            if let dest = segue.destination as? PokemonInfoViewController{
+                if let poke = sender as? Pokemon{
+                  dest.pokemon = poke
+                }
+            }
+    }
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
