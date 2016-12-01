@@ -38,20 +38,57 @@ class PokemonInfoViewController: UIViewController {
     @IBOutlet weak var image1LBL: UIImageView!
     
     @IBOutlet weak var image2LBL: UIImageView!
-    
-    
+   
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        pokemonName.text = pokemon.name
+        
+      
+        
+        pokemon.downloadComplete { 
+            self.updateUI()
+        }
+        
         // Do any additional setup after loading the view.
     }
 
+    func updateUI(){
+         pokemonName.text = pokemon.name.capitalized
+         descriptionLBL.text = pokemon.description
+         typeLBL.text = pokemon.type
+        heightLBL.text = pokemon.height
+        weightLBL.text = pokemon.weight
+        baseAttackLBL.text = String(pokemon.attack)
+        defenseLBL.text = String(pokemon.defense)
+        mainImg.image = UIImage(named: "\(pokemon.pokedexID)")
+        image1LBL.image = UIImage(named: "\(pokemon.pokedexID)")
+       // descriptionLBL.text = pokemon.description
+        
+        if pokemon.nextEvolutionId == "" {
+            
+            nxtEvlLBL.text = "No Evolutions"
+            image2LBL.isHidden = true
+            
+        } else {
+            
+            image1LBL.isHidden = false
+            image2LBL.image = UIImage(named: pokemon.nextEvolutionId)
+            let str = "Next Evolution: \(pokemon.nextEvolutionName) - LVL \(pokemon.nextEvolutionLevel)"
+            nxtEvlLBL.text = str
+        }
+
+        
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func back(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

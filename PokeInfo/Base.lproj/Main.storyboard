@@ -206,6 +206,7 @@
                                         </constraints>
                                         <state key="normal" title="Button" image="back"/>
                                         <connections>
+                                            <action selector="back:" destination="9xo-yq-cLg" eventType="touchUpInside" id="lTY-wn-5cR"/>
                                             <action selector="musicBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4e8-Vj-jLw"/>
                                         </connections>
                                     </button>
@@ -227,12 +228,8 @@
                                     <constraint firstItem="DYV-o6-kIw" firstAttribute="leading" secondItem="99q-gO-Qnm" secondAttribute="leading" constant="8" id="tu8-Lz-Cp2"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-6Q-tmA">
-                                <rect key="frame" x="16" y="119" width="125" height="125"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="dOi-xy-CsN"/>
-                                    <constraint firstAttribute="width" constant="125" id="kgi-3H-ERZ"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-6Q-tmA">
+                                <rect key="frame" x="16" y="119" width="120" height="120"/>
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Egi-hG-IJW">
                                 <rect key="frame" x="16" y="83" width="343" height="29"/>
@@ -242,10 +239,10 @@
                                 </segments>
                                 <color key="tintColor" red="1" green="0.57310845613551153" blue="0.23440014450852409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYh-52-1bZ">
-                                <rect key="frame" x="149" y="119" width="210" height="125"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="MYh-52-1bZ">
+                                <rect key="frame" x="155" y="119" width="204" height="121"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -360,7 +357,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tXh-6Q-tmA" firstAttribute="top" secondItem="Egi-hG-IJW" secondAttribute="bottom" constant="8" id="0t3-wt-rNB"/>
-                            <constraint firstItem="tXh-6Q-tmA" firstAttribute="leading" secondItem="VZd-e8-3ff" secondAttribute="leadingMargin" id="0zQ-4s-og0"/>
+                            <constraint firstItem="tXh-6Q-tmA" firstAttribute="leading" secondItem="VZd-e8-3ff" secondAttribute="leadingMargin" id="48N-Bd-tMY"/>
                             <constraint firstAttribute="trailing" secondItem="99q-gO-Qnm" secondAttribute="trailing" id="Afq-19-oQP"/>
                             <constraint firstItem="Egi-hG-IJW" firstAttribute="top" secondItem="99q-gO-Qnm" secondAttribute="bottom" constant="8" id="BhJ-br-mPV"/>
                             <constraint firstItem="99q-gO-Qnm" firstAttribute="top" secondItem="VZd-e8-3ff" secondAttribute="top" id="XLK-Td-l0n"/>
